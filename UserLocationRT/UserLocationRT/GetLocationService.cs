@@ -23,7 +23,7 @@ namespace UserLocationRT
                     token.ThrowIfCancellationRequested();
                     try
                     {
-                        await Task.Delay(10000);
+                        await Task.Delay(5000);
 
                         var request = new GeolocationRequest(GeolocationAccuracy.High);
                         var location = await Geolocation.GetLocationAsync(request);
